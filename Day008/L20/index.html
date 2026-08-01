@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            height: 2000px;
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            font-size: 90px;
+            font-style: oblique;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            align-content: start;
+
+            .box {
+                height: 300px;
+                width: 300px;
+                border: 1px solid brown;
+                margin: 2px;
+                padding: 2px;
+            }
+
+            #box1 {
+                background-color: rgb(220, 245, 240);
+                order: 500;
+            }
+
+            #box2 {
+                background-color: rgb(57, 229, 80);
+                order: -1;
+            }
+
+            #box3 {
+                background-color: rgb(242, 242, 32);
+            }
+
+            #box4 {
+                background-color: rgb(244, 41, 234);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Axit</div>
+        <div class="box" id="box2">Arpit</div>
+        <div class="box" id="box3">Shikhar</div>
+        <div class="box" id="box4">Yash</div>
+    </div>
+</body>
+</html>
