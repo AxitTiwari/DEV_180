@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            /* CSS Variables */
+            --primary-color: aquamarine;
+            --custom-width: 400px;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        .container {
+            background-color: antiquewhite;
+            height: 650px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: var(--custom-width);
+            height: 400px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: var(--primary-color);
+            /* box-shadow: 15px 15px green; */
+            /* box-shadow: 15px 15px 50px yellow; */
+            /* box-shadow: 15px 15px 50px 100px yellow; */
+            /* box-shadow: 15px 15px yellow inset; */
+            box-shadow: 15px 10px red, 20px 20px green;
+        }
+
+        img {
+            width: 15%;
+        }
+
+        #head1 {
+            text-shadow: 5px 5px 1px white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+
+            <img src="image.png"/>
+            <h2 id="head1"> welcome to web-dev</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi accusamus quia quis, alias mollitia voluptatem temporibus est minus, ab magnam asperiores ducimus molestias doloremque accusantium autem, maiores qui facilis. Earum voluptatem explicabo eveniet possimus, quod, nobis et officia libero reprehenderit quasi aspernatur, hic ducimus recusandae quisquam impedit ratione rerum.</p>
+        </div>
+    </div>
+</body>
+</html>
