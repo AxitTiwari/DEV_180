@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: skyblue;
+    margin: 100px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin: auto; */
+    transition: all 1s;
+}
+
+.box:hover {
+    /* transform: rotate(45deg);
+    background-color: lightgreen;
+    text-shadow: 2px 2px 5px black; */
+
+    transform: scale(2);
+    background-color: green;
+}
+
+p {
+    font-size: 60px;
+}
