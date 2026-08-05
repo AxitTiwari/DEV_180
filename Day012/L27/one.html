@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-image: linear-gradient( 98.4deg,  rgba(254,251,191,1) 16.6%, rgba(187,240,211,1) 81.8% );
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            height: 570px;
+            background-color: white;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            /* padding: 20px; */
+        }
+
+        .card img {
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .text_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 70%;
+            /* padding: 20px; */
+            text-align: center;
+        }
+
+        #amount_box {
+            width: 80%;
+            height: 10%;
+            background-color: rgba(132, 182, 220, 0.751);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 15px;
+        }
+
+        #payment_button {
+            width: 80%;
+            height: 9%;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .cancel_box a {
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+        }
+
+        #left_box {
+            /* width: fill-content; */
+            height: 100%;
+            display: flex;
+            gap: 15px;
+
+            align-items: center;
+            /* text-decoration: none; */
+        }
+
+        #my_img {
+            width: 2rem;
+            /* height: 4rem; */
+        }
+
+        #right_box {
+        }
+
+        #right_box a {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+
+            #amount_box {
+                flex-direction: column;
+                height: auto;
+                gap: 15px;
+                padding: 15px;
+            }
+
+            #left_box {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <img
+                src="https://imgs.search.brave.com/l8II_-V6XlzQxSN9C2uSLmqteOzA4Q5upPFjCOEFd4U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29tcHV0ZXJo/aXN0b3J5Lm9yZy90/aW1lbGluZS90aW1l/bGluZV9jb21wdXRl/cnNfMjAwOC5tYWNi/b29rYWlyLmpwZw"
+            />
+
+            <div class="text_box">
+
+                <h2>order summary</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deserunt aliquid tempora facilis accusantium dolore provident commodi, voluptates culpa nemo.</p>
+            </div>
+
+            <div id="amount_box">
+
+                <div id="left_box">
+
+                    <div id="my_img">
+                        <img src="https://imgs.search.brave.com/zPH7fSOJFwnkc5SlHX6gQK0NsvInUOdf9terQZZcFJ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L2ZyZWUtdmVjdG9y/L2dyYWRpZW50LXNz/LWxvZ28tdGVtcGxh/dGVfMjMtMjE0OTIz/NDU4MC5qcGc_c2Vt/dD1haXNfdGVzdF9i/Jnc9NzQwJnE9ODA"/>
+                    </div>
+
+                    <div id="text_amount_box">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+
+                <div id="right_box">
+                    <a href="#">cancel</a>
+                </div>
+            </div>
+
+            <button id="payment_button">procced to pay</button>
+
+            <div class="cancel_box">
+                <a href="#">cancel order<a/>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
