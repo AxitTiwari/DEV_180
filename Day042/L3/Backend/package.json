@@ -1,0 +1,15 @@
+{
+  "name": "l3",
+  "version": "1.0.0",
+  "description": "learing how to connect fronend and backend",
+  "license": "ISC",
+  "author": "axit_tiwari",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
